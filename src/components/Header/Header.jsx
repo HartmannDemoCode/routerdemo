@@ -1,4 +1,5 @@
-import { NavLink, Link } from "react-router";
+import { NavLink } from "react-router";
+import './header.css';
 
 /* Concepts:
 1. NavLink for navigation with active states
@@ -23,6 +24,14 @@ export default function Header() {
           className={({ isActive }) => (isActive ? "active" : "")}
         >
           About
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          to="/students"
+          className={({ isActive }) => (isActive ? "active" : "")}
+        >
+          Students
         </NavLink>
       </li>
       
